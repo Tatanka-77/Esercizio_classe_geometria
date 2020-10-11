@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"geometria.figurepiane","l":"Cerchio"},{"p":"<Unnamed>","l":"Client"},{"p":"geometria.figuresolide","l":"Cubo"},{"p":"geometria.figurepiane","l":"Quadrato"}]
