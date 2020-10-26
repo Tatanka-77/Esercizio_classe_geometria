@@ -1,7 +1,7 @@
 import geometria.figurepiane.Cerchio;
 import geometria.figurepiane.Quadrato;
 import geometria.figuresolide.Cubo;
-
+import geometria.piano.Punto;
 public class Client {
 	public static void main (String args[]) {
 		Cerchio cerchio = new Cerchio(Double.parseDouble(args[0]));
@@ -20,5 +20,17 @@ public class Client {
 		cubo.raddoppiaSpigolo();
 		System.out.println("Lo stesso cubo ora ha spigolo " + cubo.getSpigolo() + " , una superficie di base di " + cubo.calcolaSupBase() + " ed un volume di " + cubo.calcolaVolume());
 		System.out.println("Il cubo di spigolo " + cuboUnitario.getSpigolo() + " ha una superficie di base di " + cuboUnitario.calcolaSupBase() + " ed un volume di " + cuboUnitario.calcolaVolume());
+		Punto puntoa = new Punto (1,1);
+		Punto puntob = new Punto (2,2);
+		Punto puntoc = new Punto (6,6);
+		Punto puntod = new Punto (3,4);
+		Punto puntoe = new Punto (3,1);
+		Punto puntof = new Punto ();
+		System.out.print("I punti: " + puntoa.toString() + ", " + puntob.toString() + ", " + puntoc.toString());
+		if (Punto.sonoAllineati(puntoa,puntob,puntoc)) System.out.println(" sono allineati");
+		else System.out.println(" non sono allineati");
+		System.out.print("I punti: " + puntod.toString() + ", " + puntoe.toString() + ", " + puntof.toString());
+		if (Punto.sonoAllineati(puntod,puntoe,puntof)) System.out.println(" sono allineati");
+		else System.out.println(" non sono allineati");
 	}
 }
